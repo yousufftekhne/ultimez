@@ -33,6 +33,7 @@ h5 {
   justify-content: center;
   min-height: 100vh;
   flex-direction: column;
+  padding: 2rem 0;
 }
 .loginCon h2 {
   margin: 0;
@@ -94,6 +95,15 @@ p {
   font-size: 0.7rem;
   margin: 0;
   bottom: 0.8rem;
+}
+form button {
+  margin-bottom: 1rem;
+}
+form a {
+  color: #e0e438;
+}
+form a:hover {
+  text-decoration: none;
 }
 
 .userTable {

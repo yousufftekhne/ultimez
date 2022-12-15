@@ -1,7 +1,7 @@
 import axios from "axios";
 import { Fragment, useEffect, useRef, useState } from "react";
 import { useDispatch } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { API_BASE_URL } from "../Constants";
 import { userActions } from "../store/userData";
 
@@ -108,6 +108,9 @@ const Login = () => {
             <p className="inpErr">{resError}</p>
           </div>
           <button className="btn">Sign in</button>
+          <p>
+            Dont have an account <NavLink to="/registration">Register</NavLink>
+          </p>
         </form>
       </div>
     </Fragment>

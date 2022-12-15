@@ -1,7 +1,7 @@
 import axios from "axios";
 import { Fragment, useState } from "react";
 import { useForm } from "react-hook-form";
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { API_BASE_URL } from "../Constants";
 
 const Registration = () => {
@@ -166,6 +166,9 @@ const Registration = () => {
             <p className="inpErr">{resError}</p>
           </div>
           <button className="btn">Sign in</button>
+          <p>
+            Already have an account <NavLink to="/">Login</NavLink>
+          </p>
         </form>
       </div>
     </Fragment>
